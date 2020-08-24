@@ -1,9 +1,17 @@
 import React from "react";
+import TodosContainer from "../../Containers/Todos/TodosContainer";
+import { Container } from "react-bootstrap";
+import AddTodoContainer from "../../Containers/Todos/AddTodoContainer";
+import FilterContainer from "../../Containers/Filter/FilterContainer";
 
 const Dashboard: React.FC = () => {
   return (
     <div>
-      <h2>Dashboard</h2>
+      <Container>
+        <AddTodoContainer />
+        <TodosContainer />
+        <FilterContainer />
+      </Container>
     </div>
   );
 };
