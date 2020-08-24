@@ -15,7 +15,7 @@ const Todo: React.FC<Props> = ({ todo, toggleTodo, todoId, deleteTodo }) => {
     return null;
   }
   return (
-    <li style={{ marginTop: "10px" }} className="list-group-item">
+    <li className="list-group-item">
       <div className="d-flex justify-content-between">
         <div className="d-flex">
           <Form.Check checked={todo.done} onClick={() => toggleTodo(todoId)} />

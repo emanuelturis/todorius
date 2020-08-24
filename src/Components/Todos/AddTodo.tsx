@@ -8,7 +8,7 @@ interface Props {
 const AddTodo: React.FC<Props> = ({ addTodo }) => {
   const [todo, setTodo] = useState("");
   return (
-    <div>
+    <div style={{ marginTop: "15px" }}>
       <Form.Control
         value={todo}
         type="text"
@@ -23,6 +23,7 @@ const AddTodo: React.FC<Props> = ({ addTodo }) => {
           addTodo(todo);
           setTodo("");
         }}
+        style={{ marginTop: "15px" }}
       >
         Add Todo
       </Button>

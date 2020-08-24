@@ -11,7 +11,10 @@ const Filter: React.FC<Props> = ({ todos, setVisibilityFilter }) => {
     return null;
   }
   return (
-    <div className="d-flex">
+    <div
+      className="d-flex justify-content-between"
+      style={{ maxWidth: "275px", marginTop: "15px" }}
+    >
       <Button size="sm" onClick={() => setVisibilityFilter("ALL")}>
         Show All
       </Button>

@@ -1,6 +1,6 @@
 import { IState } from "../../types";
 import { connect } from "react-redux";
-import Filter from "../../Components/Filter";
+import FilterTodos from "../../Components/Todos/FilterTodos";
 import { ThunkDispatch } from "redux-thunk";
 import { AnyAction } from "redux";
 import { setVisibilityFilter } from "../../redux/actions/visibilityFilter";
@@ -21,4 +21,4 @@ const mapDispatchToProps = (
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Filter);
+export default connect(mapStateToProps, mapDispatchToProps)(FilterTodos);

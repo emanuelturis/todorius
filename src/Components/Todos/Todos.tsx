@@ -7,7 +7,7 @@ interface Props {
 
 const Todos: React.FC<Props> = ({ todos }) => {
   return (
-    <div>
+    <div style={{ marginTop: "15px" }}>
       <ul className="list-group">
         {todos.map((todoId) => (
           <TodoContainer todoId={todoId} />
