@@ -8,6 +8,7 @@ import { setVisibilityFilter } from "../../redux/actions/visibilityFilter";
 const mapStateToProps = (state: IState) => {
   return {
     todos: state.todos.ids,
+    visibilityFilter: state.visibilityFilter,
   };
 };
 
