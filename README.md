@@ -12,5 +12,3 @@ Technologies:
 * React
 * Redux
 * localStorage
-
-<https://nostalgic-colden-aed987.netlify.app/>
